@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma&display=swap');
+
+body {
+  background-color: gainsboro;
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('../images/fruit_bgd.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: rgb(246, 244, 169);
+  padding: 40px;
+  border-radius: 20px;
+  border: 3px solid black;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;  /* Centers text and inline elements */
+  display: flex;        /* Add these three lines */
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 325px;
+}
+
+.sqr {
+  width: 30%;
+  aspect-ratio: 1/1;
+  border: 3px solid black;
+  font-size: 64px;
+  text-align: center;
+  background-color: white;
+
+}
+
+h1 {
+font-size: 50px;
+color: rgb(255, 165, 0);
+margin-bottom: 10px;
+}
+
+h2 {
+font-size: 60px;
+color: rgb(255, 0, 234);
+margin-top: 0;
+margin-bottom: 0px;
+font-family: 'Atma', sans-serif;
+}
+
+h3 {
+font-size: 40px;
+color: orange;
+}
+
+#reset {
+  padding: 10px 20px;
+  font-size: 30px;
+  font-family: 'Atma', sans-serif;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#reset:hover {
+  background-color: #FFC700;
+  transform: scale(1.05);
+}
