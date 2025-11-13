@@ -36,7 +36,7 @@ const resetBtnEl = document.querySelector('#reset');
 /*-------------------------------- Functions --------------------------------*/
 const init = () => {
     board = ['', '', '', '', '', '', '', '', ''];
-    turn = '🍒';  // Start with cherries
+    turn = '🍒';  
     winner = false;
     tie = false;
     render();  
@@ -97,7 +97,7 @@ const checkForWinner = () => {
       confetti();
     }
   });
-  console.log("Winner:", winner); // For testing
+  console.log("Winner:", winner); 
 };
 
 const checkForTie = () => {
@@ -111,7 +111,7 @@ const checkForTie = () => {
     tie = true;
   }
   
-  console.log("Tie:", tie); // For testing
+  console.log("Tie:", tie); 
 };
 
 const switchPlayerTurn = () => {
@@ -119,7 +119,7 @@ const switchPlayerTurn = () => {
     return;
   }
   
-  turn = turn === '🍒' ? '🍋' : '🍒';  // Switch between cherries and lemons
+  turn = turn === '🍒' ? '🍋' : '🍒';  
 };
 
 init();
